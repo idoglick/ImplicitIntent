@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapActivity">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="388dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Map Activity"
+        android:textColor="#00BCD4"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Latitude Input -->
+    <EditText
+        android:id="@+id/editLatitude"
+        android:layout_width="241dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="8dp"
+        android:hint="Enter Latitude"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <!-- Longitude Input -->
+    <EditText
+        android:id="@+id/editLongitude"
+        android:layout_width="241dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="8dp"
+        android:hint="Enter Longitude"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editLatitude" />
+
+    <!-- Address Input -->
+
+    <!-- Open Map Button for Coordinates -->
+
+    <!-- Open Map Button for Address -->
+
+    <!-- Return to Main Activity Button -->
+
+    <EditText
+        android:id="@+id/editAddress"
+        android:layout_width="241dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="60dp"
+        android:hint="Enter Address"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnOpenMap" />
+
+    <Button
+        android:id="@+id/btnOpenMap"
+        android:layout_width="241dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="64dp"
+        android:text="Open Map (Coordinates)"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editLongitude" />
+
+    <Button
+        android:id="@+id/btnPinAddress"
+        android:layout_width="241dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="24dp"
+        android:text="Pin Address on Map"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editAddress" />
+
+    <Button
+        android:id="@+id/btnReturnToMain"
+        android:layout_width="318dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="52dp"
+        android:text="Return to Main Activity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
